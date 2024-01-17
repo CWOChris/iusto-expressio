@@ -21,8 +21,7 @@ Tutorial for the regular expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
-/ = is the start and end of the regex
-^ = the beginning of a string
+My regex contains anchors, quantifiers, an OR operator and bracket expressions.
 
 ### Anchors
 <!-- $ = is an anchor that matches the end of the string. --> Commented out for reading clarity.
