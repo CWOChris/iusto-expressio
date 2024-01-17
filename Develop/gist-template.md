@@ -22,18 +22,14 @@ Tutorial for the regular expression /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
 
 ## Regex Components
 / = is the start and end of the regex
-^ = the beginning of the string
-
-
-
-
-
+^ = the beginning of a string
 
 ### Anchors
 <!-- $ = is an anchor that matches the end of the string. --> Commented out for reading clarity.
 
 ### Quantifiers
 #? = matches a single character zero or one time(s). ? is a quantifier that means zero or one of the preceding character/elements allowing for the # at the start of a color code as needed.
+{ and } = are used to specify a number of times a character/element must appear.  You can also use ranges and negation to create more complex sets. (In my chosen regex, the quantity of hex digits is specified by the {6} and {3} quantifiers.)
 
 ### OR Operator
 | = is the OR operator.  It allows a match before or after it.  It is used in my chosen regex to match either a hex digit or a # and either 6 or 3 hex digits.
@@ -55,17 +51,22 @@ y = is used to execute multiple searches in a single pass.  This is useful when 
 
 ### Bracket Expressions
 [ and ] = are used to define a bracket expression, which matches any one character enclosed in the brackets. In the chosen regex, `[a-f0-9]` is a bracket expression that matches any single character that is a hexadecimal digit.
-<!-- Next two lines probably don't belong here -->
-{ and } = are used to specify a number of times a character/element must appear.  You can also use ranges and negation to create more complex sets. (In my chosen regex, the quantity of hex digits is specified by the {6} and {3} quantifiers.)
 
 ### Greedy and Lazy Match
+Refers to quantifiers behavior when matching characters.  Greedy means it will match the longest possible string.  Lazy means it will match the shortest possible string.  In my chosen regex, there are no greedy or lazy quantifiers.
 
 ### Boundaries
-
+^ = is the beginning of a string boundary. It means that the following pattern will start at the beginning of the string.
+<!-- $ = is the end of a string boundary. All characters preceding it must be at the end of the string. --> Commented out for reading clarity.
 ### Back-references
+\ = are used to refer to a previous capture group in the same pattern. The backslash, followed by a digit representing the number of the group to be referenced. There are no back-references in my chosen regex.
 
 ### Look-ahead and Look-behind
+Look-ahead = is denoted by (?=...) for a positive look ahead, or that the pattern must be present. (?<!...>) for a negative look ahead where the pattern must not be there.
+Look-behind = is denoted by (?<=...) for a positive look behind, or that the pattern must be present. (?<!...>) for a negative look behind where the pattern must not be there.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+A short section about the author with a link to the author's GitHub profile https://github.com/CWOChris
+
+I am a Full Stack Web Developer BootCamp student with EdX at the University of Minnesota.  I am an independent, self starter, motivated leader, who is passionate about learning new skills and applying them in the web development realm. I am a team player who is able to work well in either, team leadership, or, as an integral team member.  I have a wealth of knowledge and experience across many sectors including the military (combat and non-combat roles), aviation, logistics, medicine, mentorship, retail, purchasing, contract negotiations, legal and business areas.
